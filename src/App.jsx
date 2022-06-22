@@ -1,7 +1,4 @@
-import { useCallback } from 'react'
 const App = () => {
-  const handleBottomScroll = useCallback(() => {
-  }, [])
+  return <div>Hello</div>
 }
-
 export default App

@@ -1,12 +1,12 @@
-// eslint-disable-next-line prettier/prettier
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true  
   },
   extends: [
     'plugin:react/recommended',
-    'standard'
+    'standard',
+    'plugin:prettier/recommended'
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -15,13 +15,12 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: [
-    'react'
-  ],
+  plugins: ['react', 'react-hooks'],
   rules: {
     'prettier/prettier': [
       'error',
       {
+        endOfLine: 'auto',
         printWidth: 80,
         tabWidth: 2,
         singleQuote: true,
